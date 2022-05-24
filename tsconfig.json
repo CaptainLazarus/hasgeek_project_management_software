@@ -9,8 +9,10 @@
     "jsx": "react",             // Causes inline XML (JSX code) to be expanded
     "strict": true,             // Strict types, eg. prohibits `var x=0; x=null`
     "alwaysStrict": true,        // Enable JavaScript's "use strict" mode
-    "outDir" : "dist"
+    "outDir": "dist/js",
+    "rootDir": "src",
+    "esModuleInterop": true
   },
-  "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": ["src/**/*"],
+  "exclude": ["src/types/*.ts", "node_modules", ".vscode"]
 }
