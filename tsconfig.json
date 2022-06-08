@@ -1,19 +1,25 @@
 { // TypeScript configuration file: provides options to the TypeScript 
-    // compiler (tsc) and makes VSCode recognize this folder as a TS project,
-    // enabling the VSCode build tasks "tsc: build" and "tsc: watch".
-    "compilerOptions": {
-      "sourceMap": true,          // Creates *.js.map files
-      "jsx": "react",         // Strict types, eg. prohibits `var x=0; x=null`
-      "alwaysStrict": true,        // Enable JavaScript's "use strict" mode
-      "outDir": "dist/js",
-      "rootDir": "src",
-      "esModuleInterop": true,
-      "module": "commonjs",
-      "moduleResolution": "node",
-      "preserveConstEnums": true,
-      "strict": true,
-      "target": "es2017",
-    },
-    "include": ["src/**/*"],
-    "exclude": ["src/types/*.ts", "node_modules", ".vscode"]
-  }
+  // compiler (tsc) and makes VSCode recognize this folder as a TS project,
+  // enabling the VSCode build tasks "tsc: build" and "tsc: watch".
+  "compilerOptions": {
+    "sourceMap": true, // Creates *.js.map files
+    "jsx": "react", // Strict types, eg. prohibits `var x=0; x=null`
+    "alwaysStrict": true, // Enable JavaScript's "use strict" mode
+    "outDir": "build",
+    "rootDir": "src",
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "preserveConstEnums": true,
+    "strict": true,
+    // "target": "es2017"
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "src/types/*.ts",
+    "node_modules",
+    ".vscode"
+  ]
+}
