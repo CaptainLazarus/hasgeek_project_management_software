@@ -1,12 +1,16 @@
 require("dotenv").config();
 import { Emails } from "./utils/Email";
-import express, { Express } from "express"
-import bodyParser from "body-parser";
-import multer, { Multer } from 'multer';
 import { Util } from "./utils/Util";
-import console from "console";
-import fs from "fs";
+
+const express = require("express");
+const bodyParser = require("body-parser");
+const multer = require("multer");
+const console = require("console");
+import * as fs from "fs";
+
+import { Multer } from 'multer';
 import { parse } from "csv";
+import { Express } from "express";
 
 const app: Express = express();
 const PORT: Number | String = process.env.PORT || 9010;
