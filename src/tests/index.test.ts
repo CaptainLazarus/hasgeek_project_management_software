@@ -1,5 +1,5 @@
-import { Util } from '../src/utils/Util';
-import { Emails } from '../src/utils/Email';
+import { Util } from '../utils/Util';
+import { Emails } from '../utils/Email';
 require("dotenv").config();
 
 test("llequal", () => {
